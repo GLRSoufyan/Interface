@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Voorbeeld Pagina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        img, video, audio, object {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welkom op de Media Voorbeeld Pagina</h1>
+
+    <h2>Afbeelding</h2>
+    <img src="pad/naar/afbeelding.jpg" alt="Beschrijving van de afbeelding" width="600" height="400">
+
+    <h2>Geluid</h2>
+    <audio controls>
+        <source src="pad/naar/geldiggeluid.mp3" type="audio/mpeg">
+        <source src="pad/naar/geldiggeluid.ogg" type="audio/ogg">
+        Je browser ondersteunt geen audio-element.
+    </audio>
+
+    <h2>Video</h2>
+    <video width="640" height="480" controls>
+        <source src="pad/naar/video.mp4" type="video/mp4">
+        <source src="pad/naar/video.ogg" type="video/ogg">
+        Je browser ondersteunt het video-element niet.
+    </video>
+
+    <h2>PDF</h2>
+    <object data="pad/naar/document.pdf" type="application/pdf" width="600" height="400">
+        <p>Als de PDF niet zichtbaar is, kunt u deze <a href="pad/naar/document.pdf">hier downloaden</a>.</p>
+    </object>
+
+</body>
+</html>
